@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>特价活动- 1.0</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/特价活动-_1_0/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/特价活动-_1_0/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- 标注区 (矩形) -->
+      <div id="u0" class="ax_default box_2" data-label="标注区">
+        <img id="u0_img" class="img " src="images/特价活动-_1_0/regen/标注区_u0.png"/>
+        <div id="u0_text" class="text ">
+          <p><span>1. 需求：</span></p><p><span>第三方商品可部可配置特价购买活动：活动期间用活动价格购买；每日活动库存有限制，超过后用原价购买，第二日重新放出库存。</span></p><p><span><br></span></p><p><span>2. 后台配置：</span></p><p><span>商品ID、活动价格、活动单日库存、单日放号时间（时间，精确到秒，如：10:00:00）、活动开始时间（日期+时间，精确到秒，如：2020-4-15 10:00:00）、全部活动库存、活动结束时间</span></p><p><span>3. 前端展示：活动期间且商品实际库存正常（非活动期间不展示活动信息；实际库存为0展示库存不足信息）：</span></p><p><span>列表-有活动库存：活动标识（“限量抢”）、活动价</span></p><p><span>列表-无当日活动库存：活动标识（“已抢光”）、日常价</span></p><p><span>详情-有活动库存：活动标识“限量抢”、活动价、活动库存提示</span></p><p><span>详情-无当日活动库存：活动标识“已抢光”、日常价、明日活动提示</span></p><p><span>4. 关于特价购买限量</span></p><p><span>每个用户仅能购买一件特价商品，再次将以原价购买</span></p><p><span>超过一件，下单时toast提示：“第一件特价，其他将以原价结算”</span></p><p><span>5. 下单时的后端判断：</span></p><p><span>先判断是否有实际库存：无库存则提示库存不足，不能下单；正常则判断活动库存</span></p><p><span>当日活动库存不为0：以商品配置的活动价支付</span></p><p><span>当日库存已消耗为0：提示“本日特价库存已抢光，明早10点继续”，随后刷新页面。再支付时以原价支付</span></p><p><span><br></span></p><p><span><br></span></p><p><span>4. 注意：</span></p><p><span>- 下单时去预扣活动库存，支付完成扣掉库存；取消退货则退回活动库存</span></p><p><span>- 当天活动库存不为0时，展示正常活动信息，以活动价购买；当日活动库存抢空后显示活动库存被抢光的信息，以日常价购买；</span></p><p><span>- 活动进行中可以活动价购买；活动时间之外以日常价购买</span></p><p><span>- 非会员和体验会员不可参与</span></p><p><span>- 【不在活动配置名单的商品、不在活动期间的商品、活动总库存消耗光的商品】不展示活动相关信息，不能以活动价购买</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1" class="ax_default _图片">
+        <img id="u1_img" class="img " src="images/特价活动-_1_0/regen/u1.png"/>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u2" class="ax_default _图片">
+        <img id="u2_img" class="img " src="images/特价活动-_1_0/regen/u2.png"/>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u3" class="ax_default _图片">
+        <img id="u3_img" class="img " src="images/特价活动-_1_0/regen/u3.jpg"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u4" class="ax_default box_2">
+        <div id="u4_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u5" class="ax_default label">
+        <div id="u5_div" class=""></div>
+        <div id="u5_text" class="text ">
+          <p style="font-size:12px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">￥</span><span style="font-family:'ArialMT', 'Arial';font-size:16px;">0.99</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u6" class="ax_default box_2">
+        <div id="u6_div" class=""></div>
+        <div id="u6_text" class="text ">
+          <p><span>会员专享</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7" class="ax_default box_2">
+        <div id="u7_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u8" class="ax_default label">
+        <div id="u8_div" class=""></div>
+        <div id="u8_text" class="text ">
+          <p style="font-size:12px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">￥</span><span style="font-family:'ArialMT', 'Arial';font-size:16px;">0.99</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u9" class="ax_default box_2">
+        <div id="u9_div" class=""></div>
+        <div id="u9_text" class="text ">
+          <p><span>6.01</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10" class="ax_default box_2">
+        <div id="u10_div" class=""></div>
+        <div id="u10_text" class="text ">
+          <p><span>6.01</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u11" class="ax_default box_2">
+        <div id="u11_div" class=""></div>
+        <div id="u11_text" class="text ">
+          <p><span>本日特价库存已抢光，明早10点继续</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u12" class="ax_default box_2">
+        <div id="u12_div" class=""></div>
+        <div id="u12_text" class="text ">
+          <p><span>限量抢</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u13" class="ax_default box_2">
+        <div id="u13_div" class=""></div>
+        <div id="u13_text" class="text ">
+          <p><span>限量抢</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u14" class="ax_default _图片">
+        <img id="u14_img" class="img " src="images/特价活动-_1_0/regen/u14.png"/>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u15" class="ax_default _图片">
+        <img id="u15_img" class="img " src="images/特价活动-_1_0/regen/u15.png"/>
+        <div id="u15_text" class="text ">
+          <p><span>a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u16" class="ax_default box_2">
+        <div id="u16_div" class=""></div>
+        <div id="u16_text" class="text ">
+          <p><span>已抢光</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u17" class="ax_default box_2">
+        <div id="u17_div" class=""></div>
+        <div id="u17_text" class="text ">
+          <p><span>特价￥0.99库存已抢光，明日早10点继续！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u18" class="ax_default box_2">
+        <div id="u18_div" class=""></div>
+        <div id="u18_text" class="text ">
+          <p><span>特价名额仅有5000位，快快下单吧！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u19" class="ax_default _三级标题">
+        <div id="u19_div" class=""></div>
+        <div id="u19_text" class="text ">
+          <p><span>列表-有当日库存</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u20" class="ax_default _三级标题">
+        <div id="u20_div" class=""></div>
+        <div id="u20_text" class="text ">
+          <p><span>详情-有当日库存</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u21" class="ax_default _三级标题">
+        <div id="u21_div" class=""></div>
+        <div id="u21_text" class="text ">
+          <p><span>详情-无当日库存</span></p>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u22" class="ax_default" data-label="特别标注" data-left="703.513780086528" data-top="296.639028310754" data-width="155.486219913472" data-height="60.3609716892456">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u23" class="ax_default box_2">
+          <img id="u23_img" class="img " src="images/特价活动-_1_0/regen/u23.png"/>
+          <div id="u23_text" class="text ">
+            <p><span>活动价格</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u24" class="ax_default line">
+          <img id="u24_img" class="img " src="images/特价活动-_1_0/regen/u24.png"/>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u25" class="ax_default" data-label="特别标注" data-left="596.513780086528" data-top="171" data-width="155.486219913472" data-height="57.3609716892456">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u26" class="ax_default box_2">
+          <img id="u26_img" class="img " src="images/特价活动-_1_0/regen/u23.png"/>
+          <div id="u26_text" class="text ">
+            <p><span>活动标识</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u27" class="ax_default line">
+          <img id="u27_img" class="img " src="images/特价活动-_1_0/regen/u24.png"/>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u28" class="ax_default" data-label="特别标注" data-left="1759.51378008653" data-top="277" data-width="155.486219913472" data-height="57.3609716892456">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u29" class="ax_default box_2">
+          <img id="u29_img" class="img " src="images/特价活动-_1_0/regen/u23.png"/>
+          <div id="u29_text" class="text ">
+            <p><span>活动标识</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u30" class="ax_default line">
+          <img id="u30_img" class="img " src="images/特价活动-_1_0/regen/u24.png"/>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u31" class="ax_default" data-label="特别标注" data-left="1896.51378008653" data-top="435.639028310754" data-width="155.486219913472" data-height="60.3609716892456">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u32" class="ax_default box_2">
+          <img id="u32_img" class="img " src="images/特价活动-_1_0/regen/u23.png"/>
+          <div id="u32_text" class="text ">
+            <p><span>活动价格</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u33" class="ax_default line">
+          <img id="u33_img" class="img " src="images/特价活动-_1_0/regen/u24.png"/>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u34" class="ax_default" data-label="特别标注" data-left="1542" data-top="483.639028310754" data-width="242.486219913472" data-height="48.3609716892457">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u35" class="ax_default box_2">
+          <img id="u35_img" class="img " src="images/特价活动-_1_0/regen/u35.png"/>
+          <div id="u35_text" class="text ">
+            <p><span>活动库存提示文案</span></p><p><span>展示库存量=实际单日库存*100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u36" class="ax_default line">
+          <img id="u36_img" class="img " src="images/特价活动-_1_0/regen/u24.png"/>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u37" class="ax_default" data-label="特别标注" data-left="2079.51378008653" data-top="338.639028310754" data-width="155.486219913472" data-height="60.3609716892456">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u38" class="ax_default box_2">
+          <img id="u38_img" class="img " src="images/特价活动-_1_0/regen/u23.png"/>
+          <div id="u38_text" class="text ">
+            <p><span>省钱部分按活动价重新计算</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u39" class="ax_default line">
+          <img id="u39_img" class="img " src="images/特价活动-_1_0/regen/u24.png"/>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u40" class="ax_default" data-label="特别标注" data-left="2079.51378008653" data-top="871.639028310754" data-width="155.486219913472" data-height="60.3609716892456">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u41" class="ax_default box_2">
+          <img id="u41_img" class="img " src="images/特价活动-_1_0/regen/u23.png"/>
+          <div id="u41_text" class="text ">
+            <p><span>省钱部分按活动价重新计算</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u42" class="ax_default line">
+          <img id="u42_img" class="img " src="images/特价活动-_1_0/regen/u24.png"/>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u43" class="ax_default" data-label="特别标注" data-left="2112" data-top="639" data-width="380" data-height="48">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u44" class="ax_default box_2">
+          <img id="u44_img" class="img " src="images/特价活动-_1_0/regen/u44.png"/>
+          <div id="u44_text" class="text ">
+            <p><span>单日库存为0，总库存不为0：</span></p><p><span>当下单时当日库存为0时提醒，需要提醒用户名额更新时间</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u45" class="ax_default box_2">
+        <div id="u45_div" class=""></div>
+        <div id="u45_text" class="text ">
+          <p><span>特价库存已抢光，请注意实际价格</span></p>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u46" class="ax_default" data-label="特别标注" data-left="2112" data-top="779" data-width="380" data-height="48">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u47" class="ax_default box_2">
+          <img id="u47_img" class="img " src="images/特价活动-_1_0/regen/u44.png"/>
+          <div id="u47_text" class="text ">
+            <p><span>整体库存为0：</span></p><p><span>当下单时全部库存为0时提醒，需要提醒用户注意结算价格</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u48" class="ax_default" data-label="特别标注" data-left="2887" data-top="462" data-width="465" data-height="105">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u49" class="ax_default box_2">
+          <img id="u49_img" class="img " src="images/特价活动-_1_0/regen/u49.png"/>
+          <div id="u49_text" class="text ">
+            <p><span>单日库存为0，整体库存不为0：</span></p><p><span>当日库存为0时提示信息，则需页面告知用户本日抢光，明日可以继续</span></p><p><span>全部库存都消耗为0：</span></p><p><span>页面不展示活动信息</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u50" class="ax_default" data-label="特别标注" data-left="2560.02092069601" data-top="330.334079540343" data-width="520.979079303991" data-height="159.098933161549">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u51" class="ax_default box_2">
+          <img id="u51_img" class="img " src="images/特价活动-_1_0/regen/u51.png"/>
+          <div id="u51_text" class="text ">
+            <p><span>提示本日已抢光</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (水平线) -->
+        <div id="u52" class="ax_default line">
+          <img id="u52_img" class="img " src="images/特价活动-_1_0/regen/u52.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u53" class="ax_default line">
+          <img id="u53_img" class="img " src="images/特价活动-_1_0/regen/u53.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u54" class="ax_default _图片">
+        <img id="u54_img" class="img " src="images/特价活动-_1_0/regen/u3.jpg"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u55" class="ax_default box_2">
+        <div id="u55_div" class=""></div>
+        <div id="u55_text" class="text ">
+          <p><span>已抢光</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u56" class="ax_default _三级标题">
+        <div id="u56_div" class=""></div>
+        <div id="u56_text" class="text ">
+          <p><span>列表-无当日库存</span></p>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u57" class="ax_default" data-label="特别标注" data-left="1081.51378008653" data-top="171" data-width="155.486219913472" data-height="57.3609716892457">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u58" class="ax_default box_2">
+          <img id="u58_img" class="img " src="images/特价活动-_1_0/regen/u23.png"/>
+          <div id="u58_text" class="text ">
+            <p><span>活动标识，提示已抢完</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u59" class="ax_default line">
+          <img id="u59_img" class="img " src="images/特价活动-_1_0/regen/u24.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u60" class="ax_default box_2">
+        <div id="u60_div" class=""></div>
+        <div id="u60_text" class="text ">
+          <p><span>特价￥0.99库存已抢光，早10点继续！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u61" class="ax_default box_2">
+        <div id="u61_div" class=""></div>
+        <div id="u61_text" class="text ">
+          <p><span>特价￥0.99库存已抢光，明日0点继续！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u62" class="ax_default box_2">
+        <div id="u62_div" class=""></div>
+        <div id="u62_text" class="text ">
+          <p><span>第一件特价，其他将以原价结算</span></p>
+        </div>
+      </div>
+
+      <!-- 特别标注 (组 合) -->
+      <div id="u63" class="ax_default" data-label="特别标注" data-left="1784" data-top="1072" data-width="380" data-height="48">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u64" class="ax_default box_2">
+          <img id="u64_img" class="img " src="images/特价活动-_1_0/regen/u44.png"/>
+          <div id="u64_text" class="text ">
+            <p><span>当日特价库存不为0，用户购买多件，点击“立即购买”，提示“第一件特价，其他将以原价结算”</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
